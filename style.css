@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading-font {
+    font-family: 'Playfair Display', serif;
+}

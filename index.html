@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Emptiness We Share</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#1E1E1E] text-[#F5F5F5]">
+    <!-- Navbar -->
+    <nav
+      class="w-full py-6 px-8 lg:px-24 bg-[#1E1E1E] flex items-center justify-between relative z-50"
+    >
+      <div class="text-2xl font-semibold text-[#CBB26A] heading-font">
+        A COMPODIUM BY UTKARSH
+      </div>
+      <ul class="hidden md:flex space-x-8 text-[#CBB26A] font-medium">
+        <li><a href="#" class="hover:text-white transition">Home</a></li>
+        <li>
+          <a href="#about-author" class="hover:text-white transition">About</a>
+        </li>
+        <li><a href="#buy-section" class="hover:text-white transition">Buy</a></li>
+        <li>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </li>
+      </ul>
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden text-[#CBB26A] focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobile-menu"
+        class="absolute top-full left-0 w-full bg-[#1E1E1E] text-[#CBB26A] hidden flex-col space-y-4 px-8 py-6 md:hidden border-t border-[#CBB26A]"
+      >
+        <li><a href="#" class="hover:text-white transition">Home</a></li>
+        <li>
+          <a href="#about-author" class="hover:text-white transition">About</a>
+        </li>
+        <li><a href="#buy-section" class="hover:text-white transition">Buy</a></li>
+        <li>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#1E1E1E] py-20 px-8 lg:px-24">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Left Content -->
+        <div class="space-y-6">
+          <h1
+            class="text-5xl lg:text-6xl text-[#CBB26A] heading-font font-bold leading-tight"
+          >
+            The Emptiness We Share
+          </h1>
+          <p class="text-lg max-w-md text-[#E4E4E4]">
+            A haunting yet poetic journey through solitude, healing, and shared
+            silence. Discover the beauty hidden within the void.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#buy"
+              class="bg-[#CBB26A] text-[#1E1E1E] font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
+            >
+              Buy Now
+            </a>
+            <a
+              href="#read"
+              class="border border-[#CBB26A] px-6 py-3 rounded-full font-semibold text-[#CBB26A] hover:bg-[#CBB26A] hover:text-[#1E1E1E] transition"
+            >
+              Read Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center">
+          <img
+            src="./public/image/WhatsApp Image 2025-05-19 at 23.00.35_b4157cdc.jpg"
+            alt="The Emptiness We Share Book Cover"
+            class="w-80 h-auto rounded-md shadow-lg border border-[#CBB26A]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Author -->
+    <section
+      class="bg-[#121212] text-white py-16 px-6 md:px-24"
+      id="about-author"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Text Content -->
+        <div data-aos="fade-right">
+          <h2 class="text-4xl font-bold mb-4 font-serif tracking-wide">
+            About the Author
+          </h2>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6 font-sans">
+            <span class="text-[#d4af37] font-semibold">Utkarsh</span>, the
+            author of <em>"The Emptiness We Share"</em>, is a contemporary
+            novelist known for his deeply introspective storytelling. His works
+            often explore the subtle emotional landscapes of human connection
+            and solitude. With a background in literature and philosophy,
+            Utkarsh crafts narratives that linger with readers long after the
+            last page.
+          </p>
+          <p class="text-gray-400 font-light">
+            When he's not writing, Utkarsh enjoys nature walks, listening to
+            classic jazz, and connecting with readers around the world.
+          </p>
+        </div>
+
+        <!-- Right: Author Image -->
+        <div data-aos="fade-left" class="flex justify-center">
+          <img
+            src="./public/image/author.jpg"
+            alt="Author"
+            class="rounded-xl shadow-lg w-72 h-auto object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section
+      id="testimonials"
+      class="bg-[#0e0e0e] text-white py-16 px-6 md:px-24"
+    >
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#d4af37]">
+          What Readers Say
+        </h2>
+        <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
+          Here’s what our readers think about
+          <strong>"The Emptiness We Share"</strong>.
+        </p>
+      </div>
+
+      <div
+        class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <!-- Testimonial Card -->
+        <div
+          class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-gray-700"
+        >
+          <p class="text-gray-300 italic mb-4">
+            "This book made me pause and reflect. The words linger long after
+            you’ve read them."
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://i.pravatar.cc/100?img=32"
+              alt="User"
+              class="w-10 h-10 rounded-full border border-[#d4af37]"
+            />
+            <div>
+              <p class="font-semibold text-[#d4af37]">Aarav Mehta</p>
+              <p class="text-sm text-gray-500">Poetry Enthusiast</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat for more testimonials -->
+        <div
+          class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-gray-700"
+        >
+          <p class="text-gray-300 italic mb-4">
+            "A masterpiece of emotion and silence. The kind of writing that
+            speaks to your soul."
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://i.pravatar.cc/100?img=21"
+              alt="User"
+              class="w-10 h-10 rounded-full border border-[#d4af37]"
+            />
+            <div>
+              <p class="font-semibold text-[#d4af37]">Ritika Sharma</p>
+              <p class="text-sm text-gray-500">Writer & Reviewer</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all border border-gray-700"
+        >
+          <p class="text-gray-300 italic mb-4">
+            "Beautifully melancholic. I couldn’t put it down until the last
+            page."
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://i.pravatar.cc/100?img=12"
+              alt="User"
+              class="w-10 h-10 rounded-full border border-[#d4af37]"
+            />
+            <div>
+              <p class="font-semibold text-[#d4af37]">Sahil Verma</p>
+              <p class="text-sm text-gray-500">Book Blogger</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purchase -->
+    <section
+      class="bg-[#121212] text-white py-20 px-6 md:px-24"
+      id="buy-section"
+    >
+      <div
+        class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+        data-aos="fade-up"
+      >
+        <!-- Left: Book Cover -->
+        <div class="flex justify-center">
+          <img
+            src="/public/image/WhatsApp Image 2025-05-19 at 23.00.34_4c777e07.jpg"
+            alt="Book Cover"
+            class="rounded-xl shadow-xl w-72 h-auto"
+          />
+        </div>
+
+        <!-- Right: Book Details -->
+        <div>
+          <h2 class="text-4xl font-bold mb-4 font-serif text-[#d4af37]">
+            Buy "The Golden Pages"
+          </h2>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            Dive into a journey of discovery, emotion, and inspiration. "The
+            Golden Pages" is a critically acclaimed book that readers can't stop
+            talking about. Get your copy now and explore the world between the
+            lines.
+          </p>
+
+          <div id="countdown" class="text-sm text-[#d4af37] font-semibold mb-2">
+            Discount ends in: <span id="timer">--:--:--</span>
+          </div>
+          <!-- Price -->
+          <div class="mb-6 text-2xl font-semibold text-[#d4af37]">
+            ₹299
+            <span class="text-gray-400 text-sm line-through ml-2">₹499</span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex gap-4 flex-wrap">
+            <button
+              class="bg-[#d4af37] hover:bg-[#c59c2f] text-black font-semibold px-6 py-3 rounded-md shadow-md transition-all"
+            >
+              Buy Now
+            </button>
+            <button
+              class="read-sample-btn border border-[#d4af37] text-[#d4af37] hover:bg-[#1e1e1e] px-6 py-3 rounded-md font-semibold transition-all"
+            >
+              Read Sample
+            </button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="mt-8 flex items-center gap-4 text-sm text-gray-400">
+            <i class="bx bxs-lock-alt text-xl"></i>
+            <span
+              >Secure Checkout · Instant Delivery · Trusted by 1K+ Readers</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonial forms -->
+    <section
+      class="bg-[#121212] text-white py-16 px-6 md:px-24"
+      id="testimonial-form"
+    >
+      <div class="max-w-3xl mx-auto" data-aos="fade-up">
+        <h2
+          class="text-4xl font-bold mb-8 text-center text-[#d4af37] font-serif tracking-wide"
+        >
+          Share Your Thoughts
+        </h2>
+
+        <form
+          class="bg-[#1e1e1e] p-8 rounded-xl shadow-lg border border-gray-700 space-y-6"
+        >
+          <!-- Name -->
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-300 mb-1"
+              >Your Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g., Aarav Mehta"
+              class="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all"
+              required
+            />
+          </div>
+
+          <!-- Occupation -->
+          <div>
+            <label
+              for="occupation"
+              class="block text-sm font-medium text-gray-300 mb-1"
+              >Your Title</label
+            >
+            <input
+              type="text"
+              id="occupation"
+              name="occupation"
+              placeholder="e.g., Book Blogger, Student"
+              class="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all"
+            />
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-300 mb-1"
+              >Your Testimonial</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Write your testimonial here..."
+              class="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Rating -->
+          <div>
+            <label
+              for="rating"
+              class="block text-sm font-medium text-gray-300 mb-1"
+              >Rating</label
+            >
+            <select
+              id="rating"
+              name="rating"
+              class="w-full p-3 rounded-md bg-[#2a2a2a] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all"
+              required
+            >
+              <option value="">Select a rating</option>
+              <option value="5">★★★★★ - Loved it</option>
+              <option value="4">★★★★☆ - Great</option>
+              <option value="3">★★★☆☆ - Good</option>
+              <option value="2">★★☆☆☆ - Okay</option>
+              <option value="1">★☆☆☆☆ - Not great</option>
+            </select>
+          </div>
+
+          <!-- Image Upload -->
+          <div>
+            <label
+              for="image"
+              class="block text-sm font-medium text-gray-300 mb-1"
+              >Upload Your Picture (Optional)</label
+            >
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              class="w-full text-sm text-gray-400 file:bg-[#d4af37] file:text-black file:font-semibold file:px-4 file:py-2 file:border-0 file:rounded-md file:mr-4 hover:file:bg-[#c59c2f] transition-all"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-[#d4af37] hover:bg-[#c59c2f] text-black font-semibold px-8 py-3 rounded-md transition-all shadow-md"
+            >
+              Submit Testimonial
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] text-gray-300 pt-16 pb-8 px-6 md:px-24">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10"
+        data-aos="fade-up"
+      >
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4 tracking-wide">
+            About the Book
+          </h3>
+          <p class="text-sm leading-relaxed text-gray-400">
+            <strong>"The Emptiness We Share"</strong> explores raw human
+            emotion, silence, and connection through poetic depth.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4 tracking-wide">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#home" class="hover:text-[#d4af37] transition">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-[#d4af37] transition"
+                >About the Author</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="hover:text-[#d4af37] transition"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial-form"
+                class="hover:text-[#d4af37] transition"
+                >Submit Review</a
+              >
+            </li>
+            <li>
+              <a href="#buy" class="hover:text-[#d4af37] transition">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4 tracking-wide">
+            Contact
+          </h3>
+          <p class="text-sm mb-2">
+            <strong>Email:</strong> contact@emptinessbook.com
+          </p>
+          <p class="text-sm mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+          <p class="text-sm"><strong>Location:</strong> Mumbai, India</p>
+
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4">
+            <a
+              href="#"
+              class="text-xl text-gray-400 hover:text-[#d4af37] transition"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="text-xl text-gray-400 hover:text-[#d4af37] transition"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-xl text-gray-400 hover:text-[#d4af37] transition"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="text-xl text-gray-400 hover:text-[#d4af37] transition"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4 tracking-wide">
+            Subscribe
+          </h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Stay updated on new poems and events.
+          </p>
+          <form class="flex flex-col sm:flex-row flex-wrap gap-3">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="w-full sm:flex-1 px-4 py-2 rounded bg-[#1e1e1e] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37]"
+            />
+            <button
+              type="submit"
+              class="w-full sm:w-auto bg-[#d4af37] hover:bg-[#c59c2f] text-black px-5 py-2 rounded font-semibold transition-all"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-6 text-center text-sm text-gray-500">
+        <p>
+          &copy; 2025 <span class="text-[#d4af37] font-semibold">Utkarsh</span>.
+          All rights reserved.
+        </p>
+        <p class="mt-1">Made with ❤️ for readers around the world.</p>
+      </div>
+    </footer>
+
+    <!-- Sample Modal -->
+    <div
+      id="sampleModal"
+      class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="bg-[#1e1e1e] rounded-lg max-w-xl w-full p-6 text-white shadow-lg relative animate-fadeIn"
+      >
+        <!-- Close Button -->
+        <button
+          onclick="toggleModal(false)"
+          class="absolute top-3 right-4 text-2xl text-gray-300 hover:text-[#d4af37]"
+        >
+          &times;
+        </button>
+
+        <h2 class="text-2xl font-bold mb-4 font-serif text-[#d4af37]">
+          Read Sample
+        </h2>
+        <p class="text-gray-300 mb-4">
+          Here’s a sneak peek into the world of "The Golden Pages". Get a feel
+          for the writing style and story before you buy.
+        </p>
+
+        <div
+          class="bg-[#2a2a2a] p-4 rounded text-sm text-gray-200 max-h-60 overflow-y-auto"
+        >
+          <p class="mb-2">
+            "It was a misty morning when the journey began, not with a step but
+            with a whisper that changed everything."
+          </p>
+          <p>
+            Every page invites you to explore hidden meanings, soulful
+            reflections, and transformative experiences.
+          </p>
+        </div>
+
+        <div class="mt-6 text-right">
+          <button
+            onclick="toggleModal(false)"
+            class="bg-[#d4af37] text-black px-5 py-2 rounded-md font-semibold hover:bg-[#c59c2f] transition"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/javascript/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
