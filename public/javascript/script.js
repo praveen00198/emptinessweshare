@@ -1,15 +1,8 @@
-const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
+const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
 
-  menuBtn.addEventListener('click', () => {
-    const isHidden = mobileMenu.classList.contains('hidden');
-    if (isHidden) {
-      mobileMenu.classList.remove('hidden');
-      menuBtn.setAttribute('aria-expanded', 'true');
-    } else {
-      mobileMenu.classList.add('hidden');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
   });
 
 
